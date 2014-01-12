@@ -1,5 +1,7 @@
 .hmm
+.temp*
 *.swp
 .idea/
 .DS_Store
 app/platforms
+/tools/
