@@ -31,7 +31,7 @@ pwd # This is the home directory for your project
 
 Validate the macosx environment
 -------------------------------
-The OSX environment may require some additional tools. Generally these can be obtained using (homebrew)[http://brew.sh/].
+The OSX environment may require some additional tools. Generally these can be obtained using [homebrew](http://brew.sh/).
 
 ```bash
 cd ~/Projects/itp/smarttrack
