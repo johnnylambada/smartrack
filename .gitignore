@@ -1,0 +1,5 @@
+.hmm
+*.swp
+.idea/
+.DS_Store
+app/platforms

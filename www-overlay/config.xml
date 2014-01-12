@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.sigseg.smartrack" 
+    version="1.1.0"
+    versionCode="2"
+    xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0"
+    >
+    <name>Smart Track</name>
+    <description>
+        Smart Track
+    </description>
+    <author email="john@lombardos.org" href="http://www.sigseg.com">
+        John Lombardo
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="fullscreen" value="false" />
+    <preference name="orientation" value="portrait" />
+    <preference name="webviewbounce" value="true" />
+    <!--
+    <icon src="icon.png" />
+    <icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+    <icon src="icons/ios/icon.png" gap:platform="ios" width="57" height="57" />
+    <icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="icons/ios/icon_at_2x.png" gap:platform="ios" width="114" height="114" />
+    <icon src="icons/ios/icon-72_at_2x.png" gap:platform="ios" width="144" height="144" />
+    -->
+</widget>
