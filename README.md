@@ -52,9 +52,17 @@ source scripts/envsetup.sh
 download-android-sdk
 ```
 
+Download and install Node
+-------------------------
+More here.
+Download and install Cordova
+----------------------------
+More here.
 
-Important commands
-==================
+Initial project setup commands
+==============================
+These are the commands to initially set up a new project.
+
 ```bash
 cordova create app com.sigseg.fred FredFlintstone
 cordova platform add ios
