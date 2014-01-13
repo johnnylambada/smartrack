@@ -55,8 +55,10 @@ download-android-sdk
 
 Important commands
 ==================
-cordova create app com.sigseg.hbhsfb2013 HBHSFootball2013
+```bash
+cordova create app com.sigseg.fred FredFlintstone
 cordova platform add ios
 cordova platform add android
 cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-console.git
-
+...
+```
