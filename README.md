@@ -10,10 +10,11 @@ The Procedure
 -------------
 Generally, the procedure for building this app goes as follows (details for each step is in a section below):
 
+1. Validate the macosx environment; you'll need to install [homebrew](http://brew.sh). Install ant, curl, md5sum.
 1. Use git to clone the smarttrack repository
-1. Validate the macosx environment
-1. Download and extract the Android SDK
-1. Download and extract Cordova
+1. Download and extract the [Android SDK](http://developer.android.com/sdk/index.html).
+1. Download and install [Node](http://nodejs.org/download/).
+1. Download and extract the [Cordova command line utilities](http://cordova.apache.org/docs/en/3.3.0/guide_cli_index.md.html#The%20Command-Line%20Interface).
 1. Point the www directory to the correct source
 1. Make sure the javascript is correct
 1. Build and test the app
