@@ -127,7 +127,7 @@ function download-android-sdk()
     cd $(gettop)
     mkdir -p $ANDROID_SDK_ZIP_DIR
     cd $ANDROID_SDK_ZIP_DIR
-    curl $URL > $ANDROID_SDK_ZIP
+    curl $ANDROID_SDK_URL > $ANDROID_SDK_ZIP
     )
 }
 echo "download-android-sdk@Download the Android SDK" >> $T/.hmm
