@@ -1,32 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title></title>
+	<link rel="apple-touch-icon" sizes="72x72" href="images/lexLogo.png" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <script src="cordova.js"></script>
+    <script src="cordova_plugins.js"></script>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script type="text/javascript" src="js/app.js"></script> 
+	<script type="text/javascript" src="js/jquery_1.8.2.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.9.0.custom.mIn.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="js/mainScripts.js"></script> 
 	<script type="text/javascript">
 	
-    function onLoad() {
-        document.addEventListener("deviceready", onDeviceReady, false);
-    }
-
-    function onDeviceReady() {
-        console.log("snarg ready");
-        console.log("snarg window.plugins.asset2sd: "+window.plugins.asset2sd);
-        console.log("snarg window.plugins.gaPlugin.init: "+window.plugins.gaPlugin);
-        console.log("snarg about to window.plugins.gaPlugin.init");
-        console.log("snarg about to window.plugins.gaPlugin.init really!");
-        window.plugins.gaPlugin.init(
-            function(){
-                console.log("window.plugins.gaPlugin.init: success");
-                window.plugins.gaPlugin.trackEvent(
-                    function(){console.log("windows.plugins.gaPlugin.init.trackEvent: success")},
-                    function(){console.log("windows.plugins.gaPlugin.init.trackEvent: fail")},
-                    "init",
-                    "init",
-                    "init",
-                    1
-                );
-            },
-            function(){console.log("window.plugins.gaPlugin.init: fail");},
-            "UA-47125823-1",
-            10
-        );
-    }
+    function onLoad() { document.addEventListener("deviceready", onDeviceReady, false); }
+    function onDeviceReady() { gainit(); }
 
 	$("document").ready(function() {
 		makeNav();
@@ -34,5 +23,11 @@
 	})
 	
 	</script>
-
+</head>
 <body onload="onLoad()">
+<div class="gridContainer">
+
+</div>
+<div class="headerDiv"></div>
+</body>
+</html>

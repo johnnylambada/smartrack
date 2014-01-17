@@ -2,6 +2,26 @@ function endsWith(str, suffix) {
     return str.toLowerCase().indexOf(suffix.toLowerCase(), str.length - suffix.length) !== -1;
 }
 
+function gainit(){
+    window.plugins.gaPlugin.init(
+        function(){
+            console.log("window.plugins.gaPlugin.init: success");
+            gatrack("init","","", 1);
+        },
+        function(){console.log("window.plugins.gaPlugin.init: fail");},
+        "UA-47125823-1",
+        10
+    );
+}
+
+function gatrack( cat, act, lbl, val ){
+    window.plugins.gaPlugin.trackEvent(
+        function(){console.log("trackevent good: cat="+cat+" act="+act+" lbl="+lbl+" val="+val)},
+        function(){console.log("trackevent fail: cat="+cat+" act="+act+" lbl="+lbl+" val="+val)},
+        cat, act, lbl, val
+    );
+}
+
 function openFile(_subfolder, _file){
     console.log("_subfolder: " + _subfolder)
     console.log("_file: " + _file)
@@ -28,6 +48,7 @@ function openFile(_subfolder, _file){
             destination_file_location: "smartrack/"+_subfolder,
             destination_file: _file},
             function(showPath) { 
+                gatrack("open",showPath,"", 1);
                 window.plugins.webintent.startActivity({
                     action: window.plugins.webintent.ACTION_VIEW,
                     url: 'file://'+showPath,
@@ -43,5 +64,4 @@ function openFile(_subfolder, _file){
         ); 
 	}
 }
-	
 
