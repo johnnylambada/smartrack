@@ -1,0 +1,38 @@
+	<script type="text/javascript">
+	
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    function onDeviceReady() {
+        console.log("snarg ready");
+        console.log("snarg window.plugins.asset2sd: "+window.plugins.asset2sd);
+        console.log("snarg window.plugins.gaPlugin.init: "+window.plugins.gaPlugin);
+        console.log("snarg about to window.plugins.gaPlugin.init");
+        console.log("snarg about to window.plugins.gaPlugin.init really!");
+        window.plugins.gaPlugin.init(
+            function(){
+                console.log("window.plugins.gaPlugin.init: success");
+                window.plugins.gaPlugin.trackEvent(
+                    function(){console.log("windows.plugins.gaPlugin.init.trackEvent: success")},
+                    function(){console.log("windows.plugins.gaPlugin.init.trackEvent: fail")},
+                    "init",
+                    "init",
+                    "init",
+                    1
+                );
+            },
+            function(){console.log("window.plugins.gaPlugin.init: fail");},
+            "UA-47125823-1",
+            10
+        );
+    }
+
+	$("document").ready(function() {
+		makeNav();
+		makeNewModelIndex();
+	})
+	
+	</script>
+
+<body onload="onLoad()">

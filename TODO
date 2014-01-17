@@ -1,0 +1,24 @@
+# To set up for the rest
+cd ~/Desktop/Android_apps/master_framework/smartrack
+source scripts/envsetup.sh 
+
+# to check devices
+adb devcies
+
+# To start up the app on the device
+cd ~/Desktop/Android_apps/master_framework/smartrack/app
+cordova run android
+
+# To build the app 
+cd ~/Desktop/Android_apps/master_framework/smartrack/app
+cordova build android
+
+# To find the built app
+find . -name "*.apk"
+
+TODO for John:
+1) Change "OilersFootball-debug.apk" to framework.apk
+2) Get analytics working
+3) Change 'smartrack' to 'training-framwork'
+4) Build the entire apk (all cars)
+5) Explain how to update launch icon
